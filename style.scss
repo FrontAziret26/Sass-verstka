@@ -1,0 +1,388 @@
+@import "variables";
+@import "reset";
+
+body {
+
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+#header {
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    animation: 2s name;
+    @keyframes name {
+      0% {
+        margin-top: -50%;
+      }
+      100% {
+        margin-top: 0;
+      }
+
+    }
+
+    &__menu {
+      &--item {
+        margin: 0 10px;
+      }
+    }
+
+    &--option {
+      border: none;
+      margin: 0 10px;
+    }
+
+    &__btn {
+
+      @extend %btn1;
+
+      &--img {
+        padding: 0 10px;
+      }
+    }
+  }
+
+}
+
+#hero {
+  background: #ffffff;
+
+  .dieter {
+    padding-top: 40%;
+    animation: 5s item;
+    @keyframes item {
+      0% {
+        margin-left: -100%;
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        margin-left: 0;
+      }
+    }
+
+    &--weiss {
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #929A9F;
+
+      &--bou {
+        font-size: 32px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        color: #263640;
+
+        &--bau {
+          width: 427px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #929A9F;
+          padding-bottom: 15px;
+          background-image: linear-gradient(
+                          75deg,
+                          hsl(260deg 72% 50%) 0%,
+                          hsl(265deg 77% 50%) 20%,
+                          hsl(270deg 83% 50%) 29%,
+                          hsl(275deg 89% 50%) 36%,
+                          hsl(279deg 95% 50%) 43%,
+                          hsl(284deg 100% 50%) 50%,
+                          hsl(283deg 95% 55%) 57%,
+                          hsl(282deg 89% 61%) 64%,
+                          hsl(280deg 84% 66%) 71%,
+                          hsl(279deg 78% 71%) 80%,
+                          hsl(278deg 73% 77%) 100%
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+
+          &--bat {
+            @extend %btn1;
+          }
+        }
+      }
+    }
+  }
+
+  .big {
+    width: 420px;
+    height: 422px;
+    box-shadow: -44px 300px 1px #F5F8FA;
+    position: relative;
+    animation: 5s title;
+    @keyframes title {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+
+    }
+
+    &--ing {
+      position: absolute;
+      width: 420px;
+      height: 550px;
+      margin-top: 55%;
+    }
+  }
+}
+
+#about {
+  background: #F5F8FA;
+  margin-top: 10%;
+  min-height: 100vh;
+
+  .oder {
+    font-size: 24px;
+    line-height: 44px;
+    color: #263640;
+    padding-top: 10%;
+
+    &--das {
+      width: 520px;
+      font-size: 16px;
+      line-height: 28px;
+      color: #929A9F;
+    }
+  }
+
+  .und {
+    &--img-one {
+      //margin: 0 -40px;
+      &--ges {
+        padding-left: 12%;
+      }
+
+      &--von {
+        width: 312px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #263640;
+
+        &--stray {
+          width: 312px;
+          font-size: 16px;
+          line-height: 28px;
+          color: #929A9F;
+
+          &--btn-one {
+            border: none;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FF9900;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  .sohn {
+    margin: 10%;
+    width: 1000px;
+    height: 550px;
+    background: #263640;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2), -50px 100px 0px #F5F8FA;
+
+    &--unsere {
+      margin: 0 12%;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #929A9F;
+      padding-top: 10%;
+
+    }
+
+    &--weiss {
+      margin: 2% 12%;
+      width: 494px;
+      font-family: $ff;
+      font-size: 32px;
+      line-height: 44px;
+      color: #FFFFFF;
+    }
+
+    &--lang {
+      margin: 1% 12%;
+      width: 422px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+
+    &--lesen {
+      margin: 5% 12%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: #FFFFFF;
+    }
+
+    .big {
+      width: 420px;
+      height: 422px;
+      //box-shadow: -44px 300px 1px #F5F8FA;
+      position: relative;
+
+      &--fa {
+        position: absolute;
+        width: 420px;
+        height: 550px;
+        margin-top: -65%;
+        margin-left: 180%;
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.2));
+      }
+
+    }
+  }
+}
+
+#best {
+  margin-top: 9%;
+
+  &__theme {
+    display: flex;
+
+    &--title {
+      width: 222px;
+      font-size: 32px;
+      line-height: 45px;
+      display: flex;
+      align-items: center;
+      color: #f80000;
+    }
+
+    &--letz {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase
+    }
+  }
+
+  .best {
+    margin-top: 15%;
+  }
+
+  .massa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+      @extend %btn1;
+
+  }
+}
+
+#sass {
+  //position: absolute;
+  background: #F5F8FA;
+  padding: 5%;
+  margin-top: 8%;
+
+  .dieter {
+    //margin-top: 15%;
+
+    &--weiss {
+      width: 193px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #929A9F;
+
+      &--bou {
+        width: 284px;
+        font-size: 32px;
+        line-height: 44px;
+        color: #263640;
+
+        &--bout {
+          width: 327px;
+          font-size: 16px;
+          line-height: 28px;
+          color: #929A9F;
+
+          &--bat {
+            @extend %btn1;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 40px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+  }
+
+  .big {
+    &--ing {
+      position: absolute;
+      width: 702px;
+      height: 550px;
+      margin-top: -12%;
+    }
+  }
+}
+
+#footer {
+  padding: 5%;
+  background: #263640;
+
+  .footer {
+    &--presum {
+      margin-top: 3%;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+
+  .big {
+    margin-left: 85%;
+    &--title {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+
+      &--item {
+        width: 157px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF
+      }
+    }
+  }
+  .div{
+    margin-top: 8%;
+    margin-left: 3%;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+
