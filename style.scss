@@ -1,14 +1,6 @@
 @import "variables";
 @import "reset";
 
-body {
-
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
-}
 
 #header {
   position: absolute;
@@ -41,7 +33,6 @@ body {
     }
 
     &__btn {
-
       @extend %btn1;
 
       &--img {
@@ -386,4 +377,21 @@ body {
   }
 }
 
+.click {
+  padding: 100px 300px;
+  background: #000;
+  border: none;
+}
 
+
+
+.block {
+  width: 1000px;
+  height: 1000px;
+  background: rgba(0, 0, 0, 0.36);
+  &-square {
+    width: 90px;
+    height: 40px;
+    background: red;
+  }
+}
