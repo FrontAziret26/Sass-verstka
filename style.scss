@@ -18,16 +18,16 @@ body {
   .navbar {
     display: flex;
     justify-content: space-between;
-    animation: 2s name;
-    @keyframes name {
-      0% {
-        margin-top: -50%;
-      }
-      100% {
-        margin-top: 0;
-      }
-
-    }
+    //animation: 2s name;
+    //@keyframes name {
+    //  0% {
+    //    margin-top: -50%;
+    //  }
+    //  100% {
+    //    margin-top: 0;
+    //  }
+    //
+    //}
 
     &__menu {
       &--item {
@@ -57,19 +57,19 @@ body {
 
   .dieter {
     padding-top: 40%;
-    animation: 5s item;
-    @keyframes item {
-      0% {
-        margin-left: -100%;
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      100% {
-        margin-left: 0;
-      }
-    }
+    //animation: 5s item;
+      //@keyframes item {
+      //  0% {
+      //    margin-left: -100%;
+      //    opacity: 0;
+      //  }
+      //  50% {
+      //    opacity: 0.5;
+      //  }
+      //  100% {
+      //    margin-left: 0;
+      //  }
+      //}
 
     &--weiss {
       letter-spacing: 0.1em;
@@ -121,20 +121,20 @@ body {
     height: 422px;
     box-shadow: -44px 300px 1px #F5F8FA;
     position: relative;
-    animation: 5s title;
-    @keyframes title {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-
-    }
+    //animation: 5s title;
+    //@keyframes title {
+    //  0% {
+    //    opacity: 0;
+    //  }
+    //  50% {
+    //    opacity: 0;
+    //  }
+    //
+    //  100% {
+    //    opacity: 1;
+    //  }
+    //
+    //}
 
     &--ing {
       position: absolute;
@@ -205,6 +205,7 @@ body {
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2), -50px 100px 0px #F5F8FA;
 
     &--unsere {
+      position: absolute;
       margin: 0 12%;
       font-size: 14px;
       line-height: 20px;
