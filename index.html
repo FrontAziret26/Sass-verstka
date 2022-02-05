@@ -17,29 +17,74 @@
 
 </head>
 <body>
-<header id="header">
+<!--<header id="header">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar">-->
+<!--            <a href="" class="navbar__logo"><img src="./img/Weiss%20Logo.svg" alt=""></a>-->
+<!--            <nav class="navbar__menu">-->
+<!--                <a href="#" class="navbar__menu&#45;&#45;item">Startseite</a>-->
+<!--                <label>-->
+<!--                    <select class="navbar&#45;&#45;option">-->
+<!--                        <option>Leistungen</option>-->
+<!--                        <option>Пункт 2</option>-->
+<!--                    </select>-->
+<!--                </label>-->
+<!--                <label>-->
+<!--                    <select class="navbar&#45;&#45;option">-->
+<!--                        <option>Referenzen</option>-->
+<!--                        <option>Пункт 2</option>-->
+<!--                    </select>-->
+<!--                </label>-->
+
+
+<!--                <a href="#" class="navbar__menu&#45;&#45;item">Über uns</a>-->
+<!--            </nav>-->
+<!--&lt;!&ndash;            <button class="navbar__btn">Kontakt <img class="navbar__btn&#45;&#45;img" src="./img/Exclude.svg" alt=""></button>&ndash;&gt;-->
+<!--            <button class="modal-btn">OPEN MODAL</button>-->
+<!--            <div class="modal">-->
+<!--                <div class="modal__content">-->
+<!--                    <span class="modal__content&#45;&#45;btn">X</span>-->
+<!--                    <h1 class="modal__content&#45;&#45;title">Form</h1>-->
+<!--                    <form class="modal__content&#45;&#45;form">-->
+<!--                        <label>-->
+<!--                            <input type="email" placeholder="Email" class="modal__content&#45;&#45;form__email">-->
+<!--                        </label>-->
+<!--                        <label>-->
+<!--                            <input type="password" placeholder="password" class="modal__content&#45;&#45;form__key">-->
+<!--                        </label>-->
+<!--                        <button type="submit" class="modal__content&#45;&#45;form__btn">Send</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</header>-->
+<header class="header">
     <div class="container">
         <div class="navbar">
             <a href="" class="navbar__logo"><img src="./img/Weiss%20Logo.svg" alt=""></a>
-            <nav class="navbar__menu">
-                <a href="#" class="navbar__menu--item">Startseite</a>
-                <label>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <div class="dsf ">
+
                     <select class="navbar--option">
                         <option>Leistungen</option>
                         <option>Пункт 2</option>
                     </select>
-                </label>
-                <label>
+                    <li><a>Startseite</a></li>
+
+
                     <select class="navbar--option">
                         <option>Referenzen</option>
                         <option>Пункт 2</option>
                     </select>
-                </label>
+                    <li><a>Über uns</a></li>
 
+                </div>
 
-                <a href="#" class="navbar__menu--item">Über uns</a>
-            </nav>
-            <button class="navbar__btn">Kontakt <img class="navbar__btn--img" src="./img/Exclude.svg" alt=""></button>
+            </ul>
             <button class="modal-btn">OPEN MODAL</button>
             <div class="modal">
                 <div class="modal__content">
@@ -56,9 +101,10 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 
+        </div>
+
+    </div>
 </header>
 
 <section id="hero">
@@ -79,95 +125,127 @@
 
 <section id="about">
     <div class="container">
-        <div class="did">
-            <h1 class="oder">Unsere Dienstleistungen</h1>
-            <p class="oder--das">Dienstleistung ist für unsere Mitarbeiter Herausforderung, das ist die Stärke unseres
-                Teams. Ganz gleich, ob
-                Verkehrsplanungen, Ver- und Ent­sorgung, Lärmschutz oder Spezialgebiete – wir bieten Rundum-Service mit:</p>
-        </div>
+        <div class="about">
+            <h3 class="about__unsere">Unsere Dienstleistungen</h3>
+            <p class="about__unsere__ist">Dienstleistung ist für unsere Mitarbeiter Herausforderung, das ist die Stärke
+                unseres
+                Teams. Ganz gleich,
+                ob Verkehrsplanungen, Ver- und Ent­sorgung, Lärmschutz oder Spezialgebiete – wir bieten Rundum-Service
+                mit:</p>
 
-        <div class="und">
-            <img class="und--img-one" src="./img/2.png" alt="">
-            <div class="und--img-one--ges">
-                <h1 class="und--img-one--von">Studien und Konzepte, Gesamtplanung</h1>
-                <p class="und--img-one--von--stray">Neubau und Ausbau von Straßen, Verkehrsflächen, Wasserwegen
-                    und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
-                <button class="und--img-one--von--stray--btn-one">Erfahren Sie mehr <i
-                        class="fas fa-angle-right"></i></button>
-            </div>
-        </div>
-        <div class="und">
-            <img class="und--img-one" src="./img/3.png" alt="">
-            <div class="und--img-one--ges">
-                <h1 class="und--img-one--von">Studien und Konzepte, Gesamtplanung</h1>
-                <p class="und--img-one--von--stray">Neubau und Ausbau von Straßen, Verkehrsflächen, Wasserwegen
-                    und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
-                <button class="und--img-one--von--stray--btn-one">Erfahren Sie mehr <i
-                        class="fas fa-angle-right"></i></button>
-            </div>
-        </div>
+            <div class="language">
+                <div class="theme">
+                    <div>
+                        <img class="theme__img" src="./img/2.png" alt="">
+                        <div class="theme__img__div">
+                            <h4 class="theme__img__div__title">Studien und Konzepte, Gesamtplanung</h4>
+                            <p class="theme__img__div__title__item">Neubau und Ausbau von Straßen, Verkehrsflächen,
+                                Wasserwegen und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
+                            <a class="theme__img__div__title__item__alt" href="">Erfahren Sie mehr<i
+                                    class="fas fa-angle-right"></i> </a>
+                        </div>
+                    </div>
 
-        <div class="und">
-            <img class="und--img-one" src="./img/4.png" alt="">
-            <div class="und--img-one--ges">
-                <h1 class="und--img-one--von">Studien und Konzepte, Gesamtplanung</h1>
-                <p class="und--img-one--von--stray">Neubau und Ausbau von Straßen, Verkehrsflächen, Wasserwegen
-                    und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
-                <button class="und--img-one--von--stray--btn-one">Erfahren Sie mehr <i
-                        class="fas fa-angle-right"></i></button>
-            </div>
-        </div>
-        <div class="about__bg">
-            <div class="about__bg__theme">
-                <h6 class="about__bg__theme__title">Unsere Firmenhistorie</h6>
-                <h2 class="about__bg__theme__title__item">Diplom-Ingenieur Dieter Weiss gründete im Jahre 1971 sein
-                    Ingenieurbüro.</h2>
-                <p class="about__bg__theme__title__item--title">Fast 30 Jahre lang führte er es als Alleininhaber.
-                    1998 trat Sohn Klaus weiss als Stellvertreter an die Seite seines Vaters. Seit 2006 ist
-                    Diplom-Ingenieur Klaus Weiss alleiniger Geschäftsführer</p>
-                <div class="solid"></div>
-                <button class="und--img-one--von--stray--btn-one">Lesen Sie weiter <i
-                        class="fas fa-angle-right"></i></button>
-            </div>
-            <img class="about__bg--img" src="./img/5.png" alt="">
 
+                </div>
+                <div class="theme">
+                    <div>
+                        <img class="theme__img" src="./img/3.png" alt="">
+                        <div class="theme__img__div">
+                            <h4 class="theme__img__div__title">Studien und Konzepte, Gesamtplanung</h4>
+                            <p class="theme__img__div__title__item">Neubau und Ausbau von Straßen, Verkehrsflächen,
+                                Wasserwegen und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
+                            <a class="theme__img__div__title__item__alt" href="">Erfahren Sie mehr<i
+                                    class="fas fa-angle-right"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="theme">
+                    <div>
+                        <img class="theme__img" src="./img/4.png" alt="">
+                        <div class="theme__img__div">
+                            <h4 class="theme__img__div__title">Studien und Konzepte, Gesamtplanung</h4>
+                            <p class="theme__img__div__title__item">Neubau und Ausbau von Straßen, Verkehrsflächen,
+                                Wasserwegen und Eisenbahnen erfordert überzeugende Verkehrskonzepte.</p>
+                            <a class="theme__img__div__title__item__alt" href="">Erfahren Sie mehr<i
+                                    class="fas fa-angle-right"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bg">
+                <div class="gd">
+                    <h3 class="bg__firm">Unsere Firmenhistorie</h3>
+                    <h1 class="bg__weiss">Diplom-Ingenieur Dieter Weiss gründete im Jahre 1971 sein Ingenieurbüro.</h1>
+                    <p class="bg__fast">Fast 30 Jahre lang führte er es als Alleininhaber. 1998 trat Sohn Klaus weiss
+                        als Stellvertreter an die Seite seines Vaters. Seit 2006 ist Diplom-Ingenieur Klaus Weiss
+                        alleiniger Geschäftsführer</p>
+                    <a class="bg__lesen" href="#">Lesen Sie weiter <i class="fas fa-angle-right"></i></a>
+                </div>
+                <img class="img" src="./img/5.png" alt="">
+            </div>
         </div>
     </div>
 </section>
-
 <section id="best">
     <div class="container">
         <div class="best">
-            <div class="unsere">
-                <h2 class="best__wiss">Wissenswertes</h2>
-                <p class="best__wiss__massa">Integer massa urna, senectus maecenas in dapibus urna amet
-                    hendrerit.
-                    In ipsum, morbi amet aenean. Iaculis donec sem nullam nunc condimentum nisl non gravida
-                    in. </p>
-                <button class="best__wiss__massa__btn">Lesen Sie weiter <i class="fas fa-angle-right"></i>
-                </button>
+            <div>
+                <h1 class="best__unsere">Wissenswertes</h1>
+                <p class="best__unsere__ist">Integer massa urna, senectus maecenas in dapibus urna amet hendrerit. In
+                    ipsum,
+                    morbi amet aenean. Iaculis donec sem nullam nunc condimentum nisl non gravida in. </p>
             </div>
-            <div class="unsere">
-                <h6 class="unsere__letz">Unsere Letzten Beiträge</h6>
-                <h2 class="unsere__letz__sed">Sed eget morbi cursus elit ipsum pellentesque</h2>
-                <p class="unsere__letz__sed__nec">Pellentesque mauris arcu nec gravida amet nec. Duis
-                    senectus cras semper cursus bibendum phasellus vehicula porttitor...</p>
-                <button class="unsere__letz__sed__nec__btn">Lesen Sie weiter <i
-                        class="fas fa-angle-right"></i></button>
+            <div>
+                <button class="bnt">Unser Blog <i class="fas-fa-angle-right"></i></button>
             </div>
-            <div class="unsere">
-                <h2 class="unsere__letz__sed">Sed eget morbi cursus elit ipsum pellentesque</h2>
-                <p class="unsere__letz__sed__nec">Pellentesque mauris arcu nec gravida amet nec. Duis
-                    senectus cras semper cursus bibendum phasellus vehicula porttitor...</p>
-                <button class="unsere__letz__sed__nec__btn">Lesen Sie weiter <i
-                        class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+</section>
+<section id="desk">
+    <div class="container">
+        <div>
+            <h2 class="letz">Unsere Letzten Beiträge</h2>
+        </div>
+        <div class="desks">
+            <div class="desk">
+                <h2 class="desk__sed">Sed eget morbi cursus elit ipsum <br> pellentesque</h2>
+                <p class="desk__sed__amet">Pellentesque mauris arcu nec gravida amet nec. Duis senectus cras semper
+                    cursus bibendum phasellus vehicula porttitor...</p>
+                <a href="#" class="lesen"> Lesen Sie weiter <i class="fas fa-angle-right"></i> </a>
             </div>
-            <div class="unsere">
-                <h2 class="unsere__letz__sed">Sed eget morbi cursus elit ipsum pellentesque</h2>
-                <p class="unsere__letz__sed__nec">Pellentesque mauris arcu nec gravida amet nec. Duis
-                    senectus cras semper cursus bibendum phasellus vehicula porttitor...</p>
-                <button class="unsere__letz__sed__nec__btn">Lesen Sie weiter <i
-                        class="fas fa-angle-right"></i></button>
+            <div class="desk">
+                <h2 class="desk__sed">Urna velit semper faucibus ac <br> suspendisse et</h2>
+                <p class="desk__sed__amet">In nibh sodales tincidunt vitae tortor. Turpis aliquam mattis eget cursus
+                    bibendum interdum vestibulum, aliquam. Fringilla malesuada...</p>
+                <a href="#" class="lesen"> Lesen Sie weiter <i class="fas fa-angle-right"></i> </a>
+            </div>
+            <div class="desk">
+                <h2 class="desk__sed">Bibendum augue imperdiet sapien <br> quis enim
+                    elementum</h2>
+                <p class="desk__sed__amet">Facilisi id mus at pulvinar vitae, ornare vitae scelerisque. Lacus egestas
+                    augue cursus aliquam nulla. Sed erat a scelerisque neque...</p>
+                <a href="#" class="lesen"> Lesen Sie weiter <i class="fas fa-angle-right"></i> </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section id="mach">
+    <div class="container">
+        <div class="mach">
+            <div class="vid">
+                <h5 class="bei">Mach Karriere bei uns</h5>
+                <h1 class="mach__dich">Bewirb dich bei uns</h1>
+                <p class="mach__dich__sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore </p>
+                <button class="mach__dich__sit__btn">Karriere<i class="fas-fa-angle-right"></i></button>
+            </div>
+            <div>
+                <img class="img6" src="./img/6.png" alt="">
             </div>
         </div>
     </div>
@@ -184,18 +262,22 @@
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4">
                 <div class="big">
-                    <h2 class="big--title">Geschäftsführer</h2>
-                    <h4 class="big--title--item">Beratender Ingenieur
-                        Dipl.-Ing. Klaus Weiss</h4>
+                    <div >
+                        <h2 class="big--title">Geschäftsführer</h2>
+                        <h4 class="big--title--item">Beratender Ingenieur
+                            Dipl.-Ing. Klaus Weiss</h4>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4">
+                        <div >
+                            <h2 class="big--title">Adresse</h2>
+                            <h4 class="big--title--item">Straßenname 7 <br>
+                                12345 Stadt</h4>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4">
-                <div class="big">
-                    <h2 class="big--title">Adresse</h2>
-                    <h4 class="big--title--item">Straßenname 7 <br>
-                        12345 Stadt</h4>
-                </div>
-            </div>
+
             <div class="div"></div>
             <h6 class="footer--presum">Impressum
                 |

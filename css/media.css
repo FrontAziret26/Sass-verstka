@@ -1,59 +1,288 @@
+@charset "UTF-8";
+head, body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 1200px) {
   .container {
-    width: 90%;
-  }
-
-  #hero .big--ing {
-    position: absolute;
-    width: 400px;
-    height: 500px;
-    margin-top: 50%;
-  }
-
-  #about .about__bg {
-    width: 1000px;
-    height: 584px;
-  }
-  #about .about__bg .about__bg--img {
-    margin-top: -365px;
-    width: 352px;
-    height: 520px;
-    margin-left: 75%;
-  }
-
-  #best .best .unsere {
-    width: 361px;
+    width: 1220px;
   }
 }
 @media (max-width: 1024px) {
   .container {
-    width: 85%;
+    width: 990px;
   }
 
-  .container {
-    width: 90%;
+  #hero .dieter--weiss {
+    font-size: 10px;
+    line-height: 0;
   }
-
+  #hero .dieter--weiss--bou {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #hero .dieter--weiss--bou--bau {
+    width: 336px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  #hero .dieter--weiss--bou--bau--bat {
+    padding: 10px 25px;
+  }
+  #hero .big {
+    margin-top: -33%;
+    margin-left: 63.5%;
+    /* width: 442px; */
+    height: 441px;
+    box-shadow: -30px 100px 2px #f5f8fa;
+  }
   #hero .big--ing {
+    margin-top: 20%;
     position: absolute;
-    width: 400px;
-    height: 500px;
-    margin-top: 50%;
+    width: 330px;
+    height: 430px;
   }
 
-  #about .about__bg {
-    width: 1000px;
-    height: 584px;
+  #about {
+    background: #F5F8FA;
   }
-  #about .about__bg .about__bg--img {
-    margin-top: -365px;
-    width: 352px;
-    height: 520px;
-    margin-left: 75%;
+  #about .about {
+    padding: 10% 2%;
+  }
+  #about .about__unsere {
+    margin: 10px 3%;
+    font-size: 24px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #263640;
+  }
+  #about .about__unsere__ist {
+    margin: 10px 3%;
+    width: 480px;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #929A9F;
+  }
+  #about .about .language {
+    display: flex;
+    justify-content: space-around;
+  }
+  #about .about .theme {
+    display: flex;
+  }
+  #about .about .theme__img {
+    width: 312px;
+    height: 333px;
+  }
+  #about .about .theme__img__div {
+    margin-left: 25px;
+  }
+  #about .about .theme__img__div__title {
+    width: 311px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #263640;
+  }
+  #about .about .theme__img__div__title__item {
+    width: 312px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #929A9F;
+  }
+  #about .about .theme__img__div__title__item__alt {
+    color: #FF9900;
+  }
+  #about .about .bg {
+    position: relative;
+    display: flex;
+    padding-top: 5%;
+    padding-left: 10%;
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 800px;
+    height: 400px;
+    background: #263640;
+  }
+  #about .about .bg__firm {
+    font-size: 10px;
+    line-height: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #929A9F;
+  }
+  #about .about .bg__weiss {
+    width: 345px;
+    font-size: 20px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+  #about .about .bg__fast {
+    width: 300px;
+    font-size: 10px;
+    line-height: 26px;
+    /* or 162% */
+    display: flex;
+    align-items: center;
+    /* Weiß */
+    color: #FFFFFF;
+  }
+  #about .about .bg__lesen {
+    font-size: 10px;
+    color: white;
+  }
+  #about .about .img {
+    margin-left: 40%;
+    position: absolute;
+    width: 485px;
+    height: 440px;
+    padding-left: 10%;
   }
 
-  #best .best .unsere {
-    width: 361px;
+  #desk .letz {
+    margin-left: 0%;
+    font-size: 11px;
+  }
+  #desk .desks {
+    margin-left: 0%;
+  }
+  #desk .desks .desk__sed {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #desk .desks .desk__sed__amet {
+    width: 250px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  #desk .desks .lesen {
+    font-size: 12px;
+  }
+
+  #mach .mach .bei {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #mach .mach__dich {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #mach .mach__dich__sit {
+    width: 217px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  #mach .mach .img6 {
+    width: 580px;
+    height: 420px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+
+  #hero .dieter--weiss {
+    font-size: 8px;
+    line-height: 0;
+  }
+  #hero .dieter--weiss--bou {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  #hero .dieter--weiss--bou--bau {
+    width: 250px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  #hero .dieter--weiss--bou--bau--bat {
+    padding: 10px 25px;
+  }
+  #hero .big {
+    margin-top: -33%;
+    margin-left: 53.5%;
+    width: 422px;
+    height: 441px;
+    box-shadow: -30px 100px 2px #f5f8fa;
+  }
+  #hero .big--ing {
+    margin-top: 20%;
+    position: absolute;
+    width: 330px;
+    height: 430px;
+  }
+
+  #about .about .language {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about .about .bg {
+    width: 600px;
+    height: 320px;
+  }
+  #about .about .img {
+    width: 380px;
+    height: 370px;
+    padding-left: 15%;
+  }
+  #about .about .bg__firm {
+    font-size: 7px;
+  }
+  #about .about .bg__weiss {
+    width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  #about .about .bg__fast {
+    width: 249px;
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  #desk .letz {
+    margin-left: 23%;
+    font-size: 8px;
+  }
+  #desk .desks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #mach .mach .img6 {
+    width: 380px;
+    height: 330px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 480px;
+  }
+
+  #hero .big {
+    margin-top: -26%;
+    margin-left: 55.5%;
+    width: 478px;
+    height: 417px;
+    box-shadow: -33px 200px 2px #f5f8fa;
+  }
+  #hero .big--ing {
+    width: 247px;
+    height: 321px;
   }
 }
 
