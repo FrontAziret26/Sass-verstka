@@ -2,7 +2,7 @@
 @import "reset";
 
 .container {
-  width: 1140%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -32,6 +32,10 @@
       &--item {
         margin: 0 10px;
       }
+    }
+
+    .con {
+      margin-top: 2%;
     }
 
     &--option {
@@ -177,17 +181,8 @@
 
 }
 
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
+
 
 
 .btn {
@@ -198,7 +193,8 @@
   padding: 10px 60px;
   border-radius: 10px;
 }
-.dsf{
+
+.dsf {
   position: relative;
   display: flex;
 
@@ -207,7 +203,7 @@
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 2px;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -376,7 +372,7 @@
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 20px 10px;
   }
   .header .menu {
     clear: none;
@@ -458,10 +454,10 @@
 
   .big {
     margin-top: -30%;
-    margin-left: 63.5%;
+    margin-left: 62.5%;
     width: 420px;
     height: 422px;
-    box-shadow: -44px 300px 1px #F5F8FA;
+    //box-shadow: -44px 300px 1px #F5F8FA;
     position: relative;
     //animation: 5s title;
     //@keyframes title {
@@ -614,11 +610,9 @@
 }
 
 #best {
-  padding: 10% 10%;
+  padding: 5%;
 
   .best {
-    display: flex;
-
     &__unsere {
       width: 222px;
       font-size: 32px;
@@ -736,42 +730,62 @@
   padding: 5%;
   background: #263640;
 
-  .footer {
+  .footers {
     display: flex;
 
-    &--presum {
-      margin-top: 3%;
+    .footer {
+      &__sed {
+        margin-left: 290px;
+        width: 156px;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &__amet {
+          margin-left: 290px;
+          width: 160px;
+          font-size: 16px;
+          line-height: 26px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .sed {
+      margin-left: 290px;
+      width: 156px;
       font-size: 14px;
       line-height: 18px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .amet {
+      margin-left: 290px;
+      width: 160px;
+      font-size: 16px;
+      line-height: 26px;
       color: #FFFFFF;
     }
   }
 
-  .big {
-    justify-content: space-around;
-
-    //margin-left: 85%;
-
-    &--title {
-      color: #ffffff;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 1.75px;
-      text-transform: uppercase;
-
-      &--item {
-        width: 157px;
-        font-size: 16px;
-        line-height: 26px;
-        color: #FFFFFF
-      }
-    }
-  }
-
   .div {
-    margin-top: 8%;
-    margin-left: 3%;
+    width: 900px;
     border: 1px solid #FFFFFF;
   }
+
+  .pressum {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+  }
 }
+
+
+
 

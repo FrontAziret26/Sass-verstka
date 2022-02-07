@@ -6,15 +6,13 @@ head, body {
 
 @media (max-width: 1200px) {
   .container {
-    width: 1220px;
+    width: 90%;
   }
 
 }
 
 @media (max-width: 1024px) {
-  .container {
-    width: 990px;
-  }
+
   #hero {
     .dieter {
       &--weiss {
@@ -244,9 +242,7 @@ head, body {
 
 
 @media (max-width: 768px) {
-  .container {
-    width: 700px;
-  }
+
 
   #hero {
     .dieter {
@@ -275,7 +271,7 @@ head, body {
 
     .big {
       margin-top: -33%;
-      margin-left: 53.5%;
+      margin-left: 50.5%;
       width: 422px;
       height: 441px;
       box-shadow: -30px 100px 2px #f5f8fa;
@@ -288,43 +284,51 @@ head, body {
       height: 430px;
     }
   }
+
+
   #about
-  .about{
-    .language{
+  .about {
+    .language {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
     }
-    .bg{
+
+    .bg {
       width: 600px;
       height: 320px;
     }
-    .img{
+
+    .img {
       width: 380px;
       height: 370px;
       padding-left: 15%;
     }
-    .bg__firm{
+
+    .bg__firm {
       font-size: 7px;
     }
-    .bg__weiss{
+
+    .bg__weiss {
       width: 300px;
       font-size: 17px;
       line-height: 30px;
     }
-    .bg__fast{
+
+    .bg__fast {
       width: 249px;
       font-size: 8px;
       line-height: 15px;
     }
   }
-  #desk{
-    .letz{
+  #desk {
+    .letz {
       margin-left: 23%;
       font-size: 8px;
     }
-    .desks{
+
+    .desks {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -332,12 +336,48 @@ head, body {
     }
 
   }
-  #mach{
-    .mach{
-      .img6{
+  #mach {
+    .mach {
+      .img6 {
         width: 380px;
         height: 330px;
       }
+    }
+  }
+  #footer {
+    .footers {
+      .footer {
+        &__sed {
+          margin-left: 100px;
+          width: 70px;
+          font-size: 12px;
+          line-height: 15px;
+
+          &__amet {
+            margin-left: 100px;
+            width: 122px;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .sed {
+        margin-left: 50px;
+        width: 70px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      .amet {
+        margin-left: 50px;
+        width: 122px;
+        font-size: 10px;
+      }
+
+    }
+
+    .div {
+      width: 650px;
     }
   }
 
@@ -345,27 +385,332 @@ head, body {
 }
 
 @media (max-width: 576px) {
-  .container{
-    width: 480px;
-  }
-  #hero{
-    .big{
-      margin-top: -26%;
-      margin-left: 55.5%;
+
+  #hero {
+    .dieter {
+      &--weiss {
+        font-size: 8px;
+        line-height: 0;
+
+        &--bou {
+          font-size: 16px;
+          line-height: 25px;
+
+          &--bau {
+            width: 250px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 20px;
+
+            &--bat {
+              padding: 10px 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .big {
+      margin-top: -15%;
+      margin-left: 20%;
       width: 478px;
       height: 417px;
-      box-shadow: -33px 200px 2px #f5f8fa
+      box-shadow: -23px 2px 1px #f5f8fa;
     }
-    .big--ing{
-      width: 247px;
-      height: 321px;
+
+    .big--ing {
+      margin-top: 20%;
+      position: absolute;
+      width: 270px;
+      height: 300px;
+    }
+  }
+  #mach {
+    .mach {
+      flex-direction: column;
+
+      .vid {
+        margin-left: 30%;
+        position: relative;
+
+        .bei {
+          margin-top: 3%;
+
+          &__dich {
+            &__sit {
+              &__btn {
+                padding: 5px 25px
+              }
+            }
+          }
+        }
+      }
+
+      .img6 {
+        margin-top: 2px;
+        margin-left: 65px;
+        width: 300px;
+        height: 270px;
+      }
+
+    }
+  }
+  #about {
+    .about {
+      &__unsere {
+        margin: 8px 25%;
+        font-size: 15px;
+        line-height: 20px;
+
+        &__ist {
+          margin: 8px 25%;
+          width: 193px;
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+
+      }
+
+      .bg {
+        width: 330px;
+        height: 200px;
+
+        .gd {
+          .bg__firm {
+            font-size: 4px;
+          }
+
+          .bg__weiss {
+            width: 148px;
+            font-size: 12px;
+            line-height: 17px;
+          }
+
+          .bg__fast {
+            width: 144px;
+            font-size: 8px;
+            line-height: 11px;
+          }
+
+          .bg__lesen {
+            font-size: 7px;
+          }
+        }
+
+        .img {
+          width: 230px;
+          height: 220px;
+          padding-left: 15%;
+        }
+      }
+
+      .theme {
+        &__img {
+          width: 330px;
+          height: 340px;
+
+          &__div {
+            margin-left: 50px;
+
+            &__title {
+              width: 250px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+
+              &__item {
+                width: 250px;
+                font-size: 12px;
+                line-height: 20px;
+
+                &__alt {
+                  width: 165px;
+                  font-size: 12px;
+                  line-height: 28px;
+
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  #best {
+    .best {
+      margin-left: 120px;
+
+      &__unsere {
+        margin-left: 30px;
+        width: 150px;
+        font-size: 18px;
+        line-height: 25px;
+
+        &__ist {
+          margin-left: -70px;
+          width: 400px;
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        .bnt {
+        }
+      }
     }
 
   }
+  #footer {
+    .footers {
+      .lgs {
+        width: 134px;
+        height: 38px;
+      }
 
+      .footer {
+        &__sed {
+          width: 50px;
+          font-size: 10px;
+          line-height: 9px;
+
+          &__amet {
+            margin-left: 100px;
+            width: 90px;
+            font-size: 8px;
+          }
+        }
+      }
+
+      .sed {
+        width: 50px;
+        font-size: 10px;
+        line-height: 9px;
+      }
+
+      .amet {
+        width: 90px;
+        font-size: 8px;
+      }
+    }
+
+    .div {
+      width: 430px;
+      border: 1px solid #FFFFFF;
+    }
+  }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
+  #hero{
+    .big{
+      margin-top: -15%;
+      margin-left: 10%;
+    }
+  }
+  #about{
+    .about{
+      .bg{
+        width: 225px;
+        height: 165px;
+        .gd{
+          .bg__weiss{
+            width: 130px;
+            font-size: 10px;
+            line-height: 13px;
+          }
+          .bg__fast{
+            width: 111px;
+            font-size: 6px;
+            line-height: 10px;
+          }
+          .bg__lesen{
+            font-size: 5px;
+            padding-top: -20px;
+          }
+        }
+        .img{
+          width: 170px;
+          height: 185px;
+        }
+      }
+
+    }
+  }
+  #best{
+    .best{
+      margin-left: 70px;
+      &__unsere{
+        margin-left: 15px;
+        width: 150px;
+        font-size: 16px;
+        line-height: 20px;
+        &__ist{
+          margin-left: -50px;
+          width: 261px;
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+
+    }
+  }
+  #desk{
+    .desks{
+      .desk{
+        width: 341px;
+        height: 165px;
+        margin-left: 100px;
+      }
+    }
+
+  }
+  #mach{
+    .mach{
+      .img6{
+        margin-top: 2px;
+        margin-left: 25px;
+      }
+    }
+  }
+  #footer{
+    .footers{
+      .lgs{
+        width: 58px;
+        height: 35px;
+      }
+      .footer{
+        margin-left: -50px;
+      }
+
+    }
+    .div{
+      width: 300px;
+      border: 1px solid #FFFFFF;
+    }
+    .pressum{
+      padding-top: 15px;
+      font-size: 8px;
+      line-height: 15px;
+    }
+
+  }
+  
+}
+@media (max-width: 370px) {
+  #footer{
+   .footers{
+     .lgs{
+       width: 40px;
+       height: 30px;
+     }
+     .footer{
+       margin-left: -75px;
+     }
+   }
+
+  }
 
 }
 
